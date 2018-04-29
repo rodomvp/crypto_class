@@ -10,5 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "truffle": "^4.1.7",
+    "truffle-deployer": "^2.0.4"
+  }
 }

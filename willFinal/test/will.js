@@ -10,16 +10,16 @@ contract('Will', function(accounts) {
   
   it("should withdraw, right passwords ", function(){
         return will.then(instance=>{
-             return instance.gethethers.call('who', 'dat').then(result=>{
+             return instance.Withdraw.call('who', 'dat').then(result=>{
                 assert.isTrue(result);
              });
         });
     });   
 
-  it("should withdraw, wrong passwords ", function(){
+  it("shouldnt withdraw, wrong passwords ", function(){
           return will.then(instance=>{
                return instance.Withdraw.call('whole', 'dates').then(result=>{
-                  assert.isTrue(result);
+                  assert.isFalse(result);
                });
           });
       });
